@@ -1,0 +1,32 @@
+{
+  "name": "redux-auth0",
+  "version": "1.0.3",
+  "description": "Auth0 Redux middleware",
+  "main": "lib/redux-auth0.js",
+  "scripts": {
+    "build": "babel src --out-file lib/redux-auth0.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "auth0",
+    "redux",
+    "redux-auth0",
+    "authentication"
+  ],
+  "author": "Florian Pereira",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-minify": "^0.2.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-flow": "^6.23.0"
+  },
+  "dependencies": {
+    "auth0-js": "^8.11.3"
+  },
+  "peerDependencies": {
+    "redux": "^3.7.2"
+  }
+}

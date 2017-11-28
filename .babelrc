@@ -1,0 +1,13 @@
+{
+  "presets": [
+    "flow",
+    ["env", {
+      "useBuiltIns": true,
+      "modules": "commonjs",
+      "targets": {
+        "browsers": ["last 2 versions"]
+      }
+    }]
+  ],
+  "plugins": ["transform-object-rest-spread", "transform-class-properties"]
+}
