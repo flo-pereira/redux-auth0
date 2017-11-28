@@ -1,10 +1,10 @@
 {
   "name": "redux-auth0",
-  "version": "1.0.4",
+  "version": "0.0.5",
   "description": "Auth0 Redux middleware",
-  "main": "lib/redux-auth0.js",
+  "main": "lib/index.js",
   "scripts": {
-    "build": "babel src --out-file lib/redux-auth0.js",
+    "build": "babel src --out-dir lib/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -20,6 +20,7 @@
     "babel-minify": "^0.2.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-flow": "^6.23.0"
   },

@@ -6,3 +6,4 @@ In the project directory, you can run:
 
 (or `npm install redux-auth0`)
 
+#### Initialise your store:
