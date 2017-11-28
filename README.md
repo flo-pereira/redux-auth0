@@ -1,4 +1,4 @@
-##Redux Auth0 middleware
+## Redux Auth0 middleware
 
 In the project directory, you can run:
 
@@ -44,7 +44,7 @@ const store = createStoreWithAuth0(
 
 ```
 
-###Username password authentication 
+### Username password authentication 
 ```javascript
   store.dispatch(
     loginUsernamePassword({
@@ -58,7 +58,7 @@ const store = createStoreWithAuth0(
   );
 ```
 
-###Login with google
+### Login with google
 ```javascript
   store.dispatch(socialConnection({ connection: 'google-oauth2'}));
 ```
