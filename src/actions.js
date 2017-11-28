@@ -1,7 +1,7 @@
 import types from './types';
 
-export const socialConnexion = (options) => ({ type: types.SOCIAL_CONNECTION, options });
-export const loginEmailPassword = ({ email, password, redirect, ...options }) => ({ type: types.LOGIN_EMAIL_PASSWORD, redirect, email, password, options });
+export const socialConnection = (options) => ({ type: types.SOCIAL_CONNECTION, options });
+export const loginUsernamePassword = ({ username, password, redirect, ...options }) => ({ type: types.LOGIN_USERNAME_PASSWORD, redirect, username, password, options });
 export const handleLogin = ({ accessToken, idToken, expiresIn }) => ({
   type: types.LOGGED,
   accessToken,

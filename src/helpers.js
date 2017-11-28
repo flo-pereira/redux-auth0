@@ -1,4 +1,4 @@
-import { createStore } from 'redux';
+import { createStore as createReduxStore } from 'redux';
 import { auth0 } from './index';
 import AuthError from './AuthError';
 
@@ -35,8 +35,8 @@ export const token = () => {
 
 export const handleAuthentication = () => auth0.handleAuthentication();
 
-export const createStoreWithAuth0 = (reducers, middlewares) => {
-  store = createStore(
+export const createStore = (reducers, middlewares) => {
+  store = createReduxStore(
     reducers,
     middlewares,
   );

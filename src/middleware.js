@@ -1,12 +1,12 @@
-import { LOGIN_EMAIL_PASSWORD, SIGNUP, SOCIAL_CONNECTION } from "./types";
+import { LOGIN_USERNAME_PASSWORD, SIGNUP, SOCIAL_CONNECTION } from "./types";
 import { loginError, handleLogin, signUpError } from './actions';
 
 export default (auth0) => {
 
   return (store) => (next) => async (action) => {
-    if (action.type === LOGIN_EMAIL_PASSWORD) {
+    if (action.type === LOGIN_USERNAME_PASSWORD) {
       try {
-        const authResult = await auth0.login(action.email, action.password, action.options);
+        const authResult = await auth0.login(action.username, action.password, action.options);
 
         next(handleLogin(authResult));
 
