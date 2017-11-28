@@ -1,6 +1,6 @@
 {
   "name": "redux-auth0",
-  "version": "0.0.1",
+  "version": "1.0.0-rc",
   "description": "Auth0 Redux middleware",
   "main": "lib/index.js",
   "scripts": {
@@ -29,5 +29,9 @@
   },
   "peerDependencies": {
     "redux": "^3.7.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flo-pereira/redux-auth0"
   }
 }
