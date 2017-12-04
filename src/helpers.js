@@ -35,6 +35,15 @@ export const token = () => {
 
 export const handleAuthentication = () => auth0.handleAuthentication();
 
+export const request = (url, method = 'GET', headers, options) => fetch(url, {
+  ...options,
+  method,
+  headers: new Headers({
+    ...headers,
+    Authorization: `Bearer ${token()}`,
+  })
+});
+
 export const createStore = (reducers, middlewares) => {
   store = createReduxStore(
     reducers,

@@ -1,7 +1,7 @@
 import Auth0 from './Auth0';
 import reducer from './reducer';
 import middleware from './middleware';
-import { createStore, secure, token, handleAuthentication } from './helpers';
+import { createStore, secure, token, handleAuthentication, request } from './helpers';
 import { socialConnection, loginUsernamePassword, handleLogin, loginError, signup, signUpError } from './actions';
 
 import type { Auth0Conf } from 'TypeDefinitions';
@@ -19,6 +19,7 @@ export {
   secure,
   token,
   handleAuthentication,
+  request,
 };
 
 export default (config: Auth0Conf) => {
