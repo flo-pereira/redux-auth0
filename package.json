@@ -1,6 +1,6 @@
 {
   "name": "redux-auth0",
-  "version": "1.0.3-rc",
+  "version": "1.0.4-rc",
   "description": "Auth0 Redux middleware",
   "main": "lib/index.js",
   "scripts": {
