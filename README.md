@@ -90,3 +90,5 @@ const routes = {
       },
   }
 ```
+
+[fully functional example](https://github.com/flo-pereira/redux-auth0/tree/master/exemple)
