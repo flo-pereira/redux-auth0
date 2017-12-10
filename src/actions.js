@@ -11,3 +11,6 @@ export const handleLogin = ({ accessToken, idToken, expiresIn }) => ({
 export const loginError = (error) => ({ type: types.ERROR_LOGIN, error });
 export const signup = ({ email, password, redirect, ...options }) => ({ type: types.SIGNUP, redirect, email, password, options });
 export const signUpError = (error) => ({ type: types.ERROR_SIGNUP, error });
+
+export const logout = () => ({ type: types.LOGOUT });
+export const logoutError = (error) => ({ type: types.ERROR_LOGOUT, error });
