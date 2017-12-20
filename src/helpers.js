@@ -23,14 +23,14 @@ export const secure = (callback) => (...props) => {
   throw new AuthError('Not allow', 401);
 };
 
-export const token = () => {
+export const token = (type = 'idToken') => {
   const auth0state = _getAuth0State(store.getState());
 
   if (!auth0state) {
     throw new AuthError('You are not entered in any secure area yet', 428);
   }
 
-  return auth0state.idToken;
+  return auth0state[type];
 };
 
 export const handleAuthentication = () => auth0.handleAuthentication();
@@ -40,7 +40,7 @@ export const request = (url, method = 'GET', headers, options) => fetch(url, {
   method,
   headers: new Headers({
     ...headers,
-    Authorization: `Bearer ${token()}`,
+    Authorization: `Bearer ${token('accessToken')}`,
   })
 });
 
