@@ -35,7 +35,7 @@ export const token = (type = 'idToken') => {
 
 export const handleAuthentication = () => auth0.handleAuthentication();
 
-export const request = (url, method = 'GET', headers, options) => fetch(url, {
+export const request = (url, method = 'GET', headers, options) => secure(fetch)(url, {
   ...options,
   method,
   headers: new Headers({
