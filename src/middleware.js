@@ -16,7 +16,6 @@ export default (auth0) => {
 
         return next(action);
       } catch (error) {
-        console.log(error);
         return next(loginError(error));
       }
     }

@@ -10,6 +10,10 @@ const _getAuth0State = (state) => {
     auth0Key = Object.keys(state).find((key) => ('AUTH0_STORE' in state[key]));
   }
 
+  if (!state[auth0Key]) {
+    throw new AuthError('You are not entered in any secure area yet', 428);
+  }
+
   return state[auth0Key];
 };
 
@@ -23,15 +27,9 @@ export const secure = (callback) => (...props) => {
   throw new AuthError('Not allow', 401);
 };
 
-export const token = (type = 'idToken') => {
-  const auth0state = _getAuth0State(store.getState());
+export const token = (type = 'accessToken') => _getAuth0State(store.getState())[type];
 
-  if (!auth0state) {
-    throw new AuthError('You are not entered in any secure area yet', 428);
-  }
-
-  return auth0state[type];
-};
+export const error = (state) => _getAuth0State(store.getState()).error;
 
 export const handleAuthentication = () => auth0.handleAuthentication();
 
@@ -40,7 +38,7 @@ export const request = (url, method = 'GET', headers, options) => secure(fetch)(
   method,
   headers: new Headers({
     ...headers,
-    Authorization: `Bearer ${token('accessToken')}`,
+    Authorization: `Bearer ${token()}`,
   })
 });
 

@@ -1,8 +1,8 @@
 // @flow
 
 import auth0 from 'auth0-js';
-import type { Auth0Conf, RealmRequired, ConnectionRequired } from "./TypeDefinitions";
-import AuthError from "./AuthError";
+import AuthError from './AuthError';
+import type { Auth0Conf, RealmRequired, ConnectionRequired } from './TypeDefinitions';
 
 export default class Auth0 {
 
