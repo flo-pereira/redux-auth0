@@ -63,10 +63,10 @@ const store = createStoreWithAuth0(
   store.dispatch(socialConnection({ connection: 'google-oauth2'}));
 ```
 
-on social connection success, you'll be redirected to the callback url configure above,
+On social connection success, you'll be redirected to the callback url configure above,
 so you have to parse the url to recover your token.
 
-for exemple, with redux-first-router, you will have something like so:
+For example, with redux-first-router, you will have something like so:
 
 ```javascript
   import { handleLogin, handleAuthentication } from 'redux-auth0';
