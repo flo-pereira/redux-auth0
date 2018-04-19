@@ -73,14 +73,14 @@ asynckit@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
 
-auth0-js@^8.11.3:
-  version "8.11.3"
-  resolved "https://registry.yarnpkg.com/auth0-js/-/auth0-js-8.11.3.tgz#97385a17c8aad1cd612bf82fded328a4396eebdf"
+auth0-js@^9.4.2:
+  version "9.4.2"
+  resolved "https://registry.yarnpkg.com/auth0-js/-/auth0-js-9.4.2.tgz#44363933266781fb9447ce09503c6f783b86a474"
   dependencies:
     base64-js "^1.2.0"
-    idtoken-verifier "^1.1.0"
+    idtoken-verifier "^1.2.0"
     qs "^6.4.0"
-    superagent "^3.3.1"
+    superagent "^3.8.2"
     url-join "^1.1.0"
     winchan "^0.2.0"
 
@@ -1254,14 +1254,14 @@ http-signature@~1.1.0:
     jsprim "^1.2.2"
     sshpk "^1.7.0"
 
-idtoken-verifier@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/idtoken-verifier/-/idtoken-verifier-1.1.0.tgz#1add30125aa3e5e5859d152b356a908a8e2eb5a0"
+idtoken-verifier@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/idtoken-verifier/-/idtoken-verifier-1.2.0.tgz#4654f1f07ab7a803fc9b1b8b36057e2a87ad8b09"
   dependencies:
     base64-js "^1.2.0"
     crypto-js "^3.1.9-1"
     jsbn "^0.1.0"
-    superagent "^3.3.1"
+    superagent "^3.8.2"
     url-join "^1.1.0"
 
 inflight@^1.0.4:
@@ -1880,9 +1880,9 @@ strip-json-comments@~2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-2.0.1.tgz#3c531942e908c2697c0ec344858c286c7ca0a60a"
 
-superagent@^3.3.1:
-  version "3.8.1"
-  resolved "https://registry.yarnpkg.com/superagent/-/superagent-3.8.1.tgz#2571fd921f3fcdba43ac68c3b35c91951532701f"
+superagent@^3.8.2:
+  version "3.8.2"
+  resolved "https://registry.yarnpkg.com/superagent/-/superagent-3.8.2.tgz#e4a11b9d047f7d3efeb3bbe536d9ec0021d16403"
   dependencies:
     component-emitter "^1.2.0"
     cookiejar "^2.1.0"

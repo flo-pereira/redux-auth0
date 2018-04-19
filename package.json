@@ -1,6 +1,6 @@
 {
   "name": "redux-auth0",
-  "version": "1.0.9-rc",
+  "version": "1.0.10",
   "description": "Auth0 Redux middleware",
   "main": "lib/index.js",
   "scripts": {
@@ -25,7 +25,7 @@
     "babel-preset-flow": "^6.23.0"
   },
   "dependencies": {
-    "auth0-js": "^8.11.3"
+    "auth0-js": "^9.4.2"
   },
   "peerDependencies": {
     "redux": "^3.7.2"
